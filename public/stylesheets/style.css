@@ -316,7 +316,7 @@ button {
   /* border-bottom-left-radius: 5px; */
   background: #423432;
   border: none;
-  border-right: 2px solid #455a64;
+  /* border-right: 2px solid #455a64; */
   color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 1rem;
