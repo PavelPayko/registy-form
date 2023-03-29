@@ -205,17 +205,17 @@ button {
   overflow: hidden;
 }
 .form__container {
-  padding: 65px 40px 40px 40px;
+  padding: 65px 40px 0px 40px;
   flex-direction: column;
 }
 @media (max-width: 1024px) {
   .form__container {
-    padding: 50px 40px 40px 40px;
+    padding: 50px 40px 0px 40px;
   }
 }
 @media (max-width: 480px) {
   .form__container {
-    padding: 20px 18px 24px 18px;
+    padding: 20px 18px 0px 18px;
   }
 }
 .form__blur {
@@ -347,6 +347,7 @@ button {
 .social {
   margin-top: 35px;
   display: flex;
+  z-index: 2;
 }
 .social__item {
   margin-right: 20px;
@@ -355,14 +356,14 @@ button {
   margin-right: 0;
 }
 .social__icon {
-  width: 25px;
-  height: 25px;
+  width: 36px;
+  height: 36px;
   fill: #fff;
   transition: 0.3s;
   stroke-width: 0px;
 }
 .social__icon:hover {
-  fill: #00bfa5;
+  fill: #423432;
 }
 
 /*# sourceMappingURL=style.css.map */
