@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .wrapper
+    .wrapper__bg
+        img.wrapper__bg-img(src='/images/bg.jpg' alt='bg')
+    form(action="/telegram", method="post" class="form" id='telegramForm' enctype="application/x-www-form-urlencoded")
+      .form__container
+          .form__blur
+          .form__title
+              .form__title-line
+              h3.form__title-text Велозабег в Брянске!
+              .form__title-line
+          .form__inputs
+            input(type="text" name='name' placeholder="Имя" class="form__input")
+            input(type="text" name='company' placeholder="Компания, в которой работаете" class="form__input" required)
+            input(name="quantity" type="number" placeholder="Сколько человек участвует от вашей компании?" class="form__input" required)
+          .form__buttons
+            input(type="submit" class="form__submit" value="Отправить")
+    //- ul.social
+    //-     li.social__item
+    //-         a.social__link(target='__blank' href='#')
+    //-             svg.social__icon
+    //-                 use(xlink:href='/images/symbols.svg#vk')
+    //-     li.social__item
+    //-         a.social__link(target='__blank' href='#')
+    //-             svg.social__icon
+    //-                 use(xlink:href='/images/symbols.svg#github')
+    //-     li.social__item
+    //-         a.social__link(target='__blank' href='#')
+    //-             svg.social__icon
+    //-                 use(xlink:href='/images/symbols.svg#tw')
+  
+  script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+  script(src="/javascripts/blurForm.js")
+  script(src="/javascripts/app.js")
